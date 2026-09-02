@@ -12,8 +12,8 @@ pub fn main(init: std.process.Init) !void {
     var progress: u7 = 0;
     
     while (progress < 100) {
-        const max = @min(progress + 20, 100);
-        progress = rand.intRangeAtMost(u7, progress + 1, max);
+        const limit = @min(progress + 20, 100);
+        progress = rand.intRangeAtMost(u7, progress + 1, limit);
         
         print("Pentagon hack progress: {}%\n", .{progress});
         

@@ -64,7 +64,7 @@ void sleep(word seconds) {
 main() {
     word seed;
     word progress;
-    word max;
+    word limit;
     word roll;
 
     seed = get_ticks();
@@ -76,13 +76,13 @@ main() {
     progress = 0;
 
     while (progress < 100) {
-        max = progress + 20;
+        limit = progress + 20;
 
-        if (max > 100) {
-            max = 100;
+        if (limit > 100) {
+            limit = 100;
         }
 
-        progress = random_range(#seed, progress + 1, max);
+        progress = random_range(#seed, progress + 1, limit);
 
         WriteStr("Pentagon hack progress: ");
         WriteInt(progress);

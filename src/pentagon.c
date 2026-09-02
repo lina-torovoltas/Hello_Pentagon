@@ -18,13 +18,13 @@ int main(void) {
     uint8_t progress = 0;
 
     while (progress < 100) {
-        uint8_t max = progress + 20;
+        uint8_t limit = progress + 20;
 
-        if (max > 100) {
-            max = 100;
+        if (limit > 100) {
+            limit = 100;
         }
 
-        progress = random_range(progress + 1, max);
+        progress = random_range(progress + 1, limit);
 
         printf("Pentagon hack progress: %d%%\n", progress);
 

@@ -7,8 +7,8 @@ progress = 0
 
 
 while progress < 100:
-    max = min(progress + 20, 100)
-    progress = random.randint(progress + 1, max)
+    limit = min(progress + 20, 100)
+    progress = random.randint(progress + 1, limit)
 
     print(f"Pentagon hack progress: {progress}%")
 

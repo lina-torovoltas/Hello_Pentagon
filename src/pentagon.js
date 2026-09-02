@@ -11,8 +11,8 @@ async function main() {
     let progress = 0;
 
     while (progress < 100) {
-        const max = Math.min(progress + 20, 100);
-        progress = random_range(progress + 1, max);
+        const limit = Math.min(progress + 20, 100);
+        progress = random_range(progress + 1, limit);
 
         console.log(`Pentagon hack progress: ${progress}%`);
 

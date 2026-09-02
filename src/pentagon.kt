@@ -9,8 +9,8 @@ fun main() = runBlocking {
     var progress = 0
     
     while (progress < 100) {
-        val maxLimit = min(progress + 20, 100)
-        progress = Random.nextInt(progress + 1, maxLimit + 1)
+        val limit = min(progress + 20, 100)
+        progress = Random.nextInt(progress + 1, limit + 1)
         
         println("Pentagon hack progress: $progress%")
         

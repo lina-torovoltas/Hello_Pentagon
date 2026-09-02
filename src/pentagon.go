@@ -14,13 +14,13 @@ func main() {
 	progress := 0
 
 	for progress < 100 {
-		maxLimit := progress + 20
+		limit := progress + 20
 		
-		if maxLimit > 100 {
-			maxLimit = 100
+		if limit > 100 {
+			limit = 100
 		}
 		
-		progress = rand.Intn(maxLimit-progress) + progress + 1
+		progress = rand.Intn(limit - progress) + progress + 1
 		
 		fmt.Printf("Pentagon hack progress: %d%%\n", progress)
 

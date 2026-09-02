@@ -9,8 +9,8 @@ void main() {
     int progress = 0;
     
     while (progress < 100) {
-        int maxProgress = min(progress + 20, 100);
-        progress = uniform!"[]"(progress + 1, maxProgress);
+        int limit = min(progress + 20, 100);
+        progress = uniform!"[]"(progress + 1, limit);
         
         writefln("Pentagon hack progress: %d%%", progress);
         

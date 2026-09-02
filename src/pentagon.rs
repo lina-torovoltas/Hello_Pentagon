@@ -9,8 +9,8 @@ fn main() {
     let mut progress: u64 = 0;
 
     while progress < 100 {
-        let max = (progress + 20).min(100);
-        progress = rng.random_range(progress+1..=max);
+        let limit = (progress + 20).min(100);
+        progress = rng.random_range(progress+1..=limit);
 
         println!("Pentagon hack progress: {}%", progress);
 
