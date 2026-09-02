@@ -3,6 +3,8 @@ import std.random;
 import core.thread;
 import std.algorithm : min;
 
+
+
 void main() {
     int progress = 0;
     
@@ -17,6 +19,7 @@ void main() {
     
     if (uniform!"[]"(1, 30) > 20) {
         writeln("Pentagon hack: Completed successfully.");
+        
     } else {
         writeln("Pentagon hack: Failed.");
     }
