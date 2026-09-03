@@ -1,5 +1,6 @@
 05 rem compiler used: freebasic
-06
+06 rem with flag: -lang qb
+07
 10 RANDOMIZE
 15
 20 progress = 0
