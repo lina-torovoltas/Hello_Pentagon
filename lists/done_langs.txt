@@ -1,0 +1,15 @@
+Basic
+C
+C3
+D
+Ferra https://ferra-0.github.io/main
+Go
+Hare
+HolyC
+JavaScript
+Kotlin
+Nim
+Python
+Rust
+Sphinx C-- https://github.com/KolibriOS/cminusminus
+Zig

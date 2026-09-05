@@ -1,0 +1,47 @@
+1C
+Ada
+Algol
+Bash
+Beef
+C#
+C++ - WIP
+Clojure
+COBOL
+CoffeeScript
+Common Lisp
+Crystal
+Dart
+El-Lang: DelfinIbnKadafi/El-Language
+Erlang
+F#
+Factor
+Fasm
+Forth
+Fortran
+Gas
+Genesis: elonlit/Genesis
+Haskell
+Idris
+Java - WIP
+Limbo
+Lua - WIP
+Masm
+Modula
+Nasm
+Oberon
+OCaml
+Odin
+Pascal
+Pawn
+Prolog
+PureScript
+Racket
+Rebol
+Ruby
+Scheme
+Seed7
+Swift
+TypeScript
+V
+Vala
+Yasm
