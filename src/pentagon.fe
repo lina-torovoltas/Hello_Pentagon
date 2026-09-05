@@ -2,7 +2,6 @@
 
 extern func getrandom(ptr, i64, i32): i64
 extern func sleep(i32): i32
-extern func printf(str, u64): i32
 
 
 
@@ -27,7 +26,9 @@ func main(): i64 {
         
         progress = random_range(progress + 1, limit)
 
-        printf("Pentagon hack progress: %llu%%\n", progress)
+        logl("Pentagon hack progress: ")
+        logl(progress)
+        log("%")
     
         sleep(1)
     }
