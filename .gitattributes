@@ -1,4 +1,4 @@
 *.cmm linguist-language=C
 *.h-- linguist-vendored
 *.hc linguist-language=HolyC
-*.fe linguist-language=Rust
+*.fe linguist-language=Swift
