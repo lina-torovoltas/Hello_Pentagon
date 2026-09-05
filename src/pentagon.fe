@@ -1,0 +1,43 @@
+// compiler used: https://ferra-0.github.io/main ver 1.19.4
+
+extern func getrandom(ptr, i64, i32): i64
+extern func sleep(i32): i32
+extern func printf(str, u64): i32
+
+
+
+func random_range(min: u64, max: u64): u64 {
+    var value: u64 = 0
+    
+    getrandom(^value, 8, 0)
+    
+    ret min + value % (max - min + 1)
+}
+
+
+func main(): i64 {
+    var progress: u64 = 0
+
+    for progress < 100 {
+        var limit: u64 = progress + 20
+        
+        if limit > 100 {
+            limit = 100
+        }
+        
+        progress = random_range(progress + 1, limit)
+
+        printf("Pentagon hack progress: %llu%%\n", progress)
+    
+        sleep(1)
+    }
+
+    if random_range(1, 30) > 20 {
+        log("Pentagon hack: Completed successfully.")
+        
+    } else {
+        log("Pentagon hack: Failed.")
+    }
+
+    ret 0
+}
