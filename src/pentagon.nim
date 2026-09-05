@@ -8,7 +8,6 @@ randomize()
 var progress = 0
 
 
-
 while progress < 100:
     let limit = min(progress + 20, 100)
     progress = rand(progress + 1 .. limit)

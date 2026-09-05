@@ -10,14 +10,14 @@ fn main() {
 
     while progress < 100 {
         let limit = (progress + 20).min(100);
-        progress = rng.random_range(progress+1..=limit);
+        progress = rng.random_range(progress + 1 ..= limit);
 
         println!("Pentagon hack progress: {}%", progress);
 
         sleep(Duration::from_secs(1));
     }
 
-    if rng.random_range(1..=30) > 20 {
+    if rng.random_range(1 ..= 30) > 20 {
         println!("Pentagon hack: Completed successfully.");
         
     } else {
