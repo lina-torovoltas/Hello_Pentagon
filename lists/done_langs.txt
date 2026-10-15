@@ -13,3 +13,4 @@ Python
 Rust
 Sphinx C-- https://github.com/KolibriOS/cminusminus
 Zig
+Haskell

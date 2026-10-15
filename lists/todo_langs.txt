@@ -20,7 +20,6 @@ Forth
 Fortran
 Gas
 Genesis: elonlit/Genesis
-Haskell
 Idris
 Java - WIP
 Limbo
